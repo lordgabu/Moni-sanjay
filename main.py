@@ -43,9 +43,9 @@ bot = Client(
     bot_token=BOT_TOKEN
 )
 
-API_ID    = os.environ.get("API_ID", "21567814")
-API_HASH  = os.environ.get("API_HASH", "cd7dc5431d449fd795683c550d7bfb7e")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "7799414140:AAEpX2auXFGdZg0TIZ5DmRfk-zGFiCmXfSA") 
+API_ID    = os.environ.get("API_ID", "21716342")
+API_HASH  = os.environ.get("API_HASH", "9aab81717b40ade1d805023b707a7136")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8166167899:AAHM0yIDKd4ClqZLH-uQpgOCoW8A1jwO-Mc") 
 
 # Define aiohttp routes
 routes = web.RouteTableDef()
@@ -91,11 +91,11 @@ import random
 keyboard = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="📞 Contact", url="https://t.me/Strangerboy27_bot_strangerboy"),
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/+EU-tiwyLZBMzY2Jl"),
+            InlineKeyboardButton(text="📞 Contact", url="https://t.me/hek0r"),
+            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/gabubots"),
         ],
         [
-            InlineKeyboardButton(text="🪄 Updates Channel", url="https://t.me/hjvvgi"),
+            InlineKeyboardButton(text="🪄 Updates Channel", url="https://t.me/gabubots"),
         ],
     ]
 )
@@ -104,11 +104,11 @@ keyboard = InlineKeyboardMarkup(
 Busy = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="📞 Contact", url="https://t.me/sanjaykagra86"),
-            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/SSC_Aspirants_7"),
+            InlineKeyboardButton(text="📞 Contact", url="https://t.me/gabubots"),
+            InlineKeyboardButton(text="🛠️ Help", url="https://t.me/gabubots"),
         ],
         [
-            InlineKeyboardButton(text="🪄 Updates Channel", url="https://t.me/SSC_Aspirants_7"),
+            InlineKeyboardButton(text="🪄 Updates Channel", url="https://t.me/gabubots"),
         ],
     ]
 )
@@ -136,7 +136,7 @@ async def add_channel(client, message: Message):
     if not any(user[0] == user_id for user in subscription_data):
         await message.reply_text(
             "🚫 **You are not a premium user.**\n\n"
-            "🔑 Please contact my admin at: **@john_rockey** for subscription details."
+            "🔑 Please contact my admin at: **@hek0r** for subscription details."
         )
         return
 
